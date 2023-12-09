@@ -4,7 +4,7 @@ let value = 0
 let btninc = document.querySelector(".inc")
 let btnDec = document.querySelector(".dec")
 let btnReset = document.querySelector(".reset")
-
+let btnRandom = document.querySelector(".random")
 
 
 btninc.addEventListener("click", () =>  {
@@ -21,6 +21,15 @@ btnReset.addEventListener("click", () => {
     value = 0
     numContainer.textContent= value
 })
+
+btnRandom.addEventListener("click", () => {
+    value= Math.round( Math.random()*10)
+    numContainer.textContent= value
+})
+
+
+
+
 
 
 
